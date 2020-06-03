@@ -1,0 +1,36 @@
+<?php>
+include("header.php");
+?>
+<div class="panel panel-default">
+    <div class="panel panl-heading">
+        <h2>
+            <a class="btn btn-success" href="add.php">Add Student</a>
+            <a class="btn btn-info pull-right" href="viewwall.php"> View All</a>
+        </h2>
+        <div class="well text-center">
+            <?php echo date["Y-m-d"];?>
+        </div>
+        <div class="panel panel-body">
+            <form action="index.php">
+                <table class="table table-striped">
+                    <th> #serial Number</th>Student Name</th>
+                    <th>Roll Number</th>
+                    <th>Attendance Status</th>
+                    <?php $result=mysli_query($con,"select" from attendance");
+$serialNumber=();
+while($row=mysqli_fetch_array($result))
+{
+    <td></td>
+    ?php
+}
+?>
+                    <td>
+                        <?php echo $serialNumber; ?> </td>
+                    <td>
+                        <?php echo $row['student_name']; ?> </td>
+                    <td>
+                        <?php echo $row['roll_number']; ?> </td>
+                    <input type="radio" name="" value="Present">Present
+                    <input type="radio" name="" value="Absent">
+                    </td>
+                    </tr>
